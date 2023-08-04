@@ -1,1 +1,5 @@
+This project was something I worked on when I worked at Memorial Sloan Kettering Cancer Center in the spring of 2023. The deliverable was a dataset in .csv format to be analyzed by the Epidemiology/Biostatistics team at MSK.
+The files within this repository are as follows:
 
+active-patient-cohort.sql
+  This SQL is the start fo the 
