@@ -2,4 +2,12 @@ This project was something I worked on when I worked at Memorial Sloan Kettering
 The files within this repository are as follows:
 
 active-patient-cohort.sql
-  This SQL is the start of the creation of the cohort of patients analyzed. It looks at the patients during the time period of 4/6/2022 to 5/6/2022 (6 months pre and post CURES deployment) who had any type of encounter in the 2 months before the week of interest. 
+  This query is the start of the creation of the cohort of patients analyzed. It looks at the patients during the time period of 4/6/2022 to 5/6/2022 (6 months pre and post CURES deployment) who had any type of encounter in the 2 months before the week of interest. 
+
+portal-active-patient-cohort.sql
+  This query expands on the previous query and looks at if a patient is active on the patient portal during the specified weeks of interest. It is left joined on the active patient query.
+
+There are additional queries that look at reports read, portal secure message (PSM) that are sent and the number of days where there's >= 1 login to either a patient or proxy account. All of these queries (6 total) were published to a Dremio data lake via Minio and python. They were then pulled into a seperate Jupyter notebook and agggregated.
+
+CURES_etl_final_data.ipynb
+  This python script creates and validates the final dataset to meet all the business logic for the biostats team.
