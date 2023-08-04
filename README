@@ -2,4 +2,4 @@ This project was something I worked on when I worked at Memorial Sloan Kettering
 The files within this repository are as follows:
 
 active-patient-cohort.sql
-  This SQL is the start fo the 
+  This SQL is the start of the creation of the cohort of patients analyzed. It looks at the patients during the time period of 4/6/2022 to 5/6/2022 (6 months pre and post CURES deployment) who had any type of encounter in the 2 months before the week of interest. 
